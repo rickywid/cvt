@@ -15,7 +15,7 @@
         body {
             max-width: 1600px;
             margin: 0 auto;
-            padding: 5rem;
+            padding: 10px;
             font-family: 'Inter';
         }
 
@@ -38,11 +38,6 @@
             height: auto;
         }
 
-        main {
-            padding-left: 5rem;
-            display: flex;
-        }
-
         ul {
             padding: 0;
         }
@@ -56,11 +51,18 @@
         }
 
         .sidebar {
-            align-self: start;
-            padding-right: 5rem;
-            border-right: 1px solid #d8dfe6;
-            position: sticky;
-            top: 20px;
+            display: none;
+        }
+
+        .profile {
+            border-bottom: 1px solid #d8dfe6;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .profile p {
+            padding: 0;
+            margin: 0;
         }
 
         .personal li,
@@ -72,11 +74,7 @@
         .project {
             margin-bottom: 3rem;
             padding-bottom: 3rem;
-            border-bottom: 1px solid #4a525b;
-        }
-
-        .projects {
-            padding-left: 5rem;
+            border-bottom: 1px solid #d8dfe6;
         }
 
         .border-dashed {
@@ -102,6 +100,34 @@
             width: 50px;
             height: auto;
         }
+
+        @media (min-width: 600px) {
+            body {
+                padding: 5rem;
+            }
+
+            main {
+                display: flex;
+                padding-left: 5rem;
+            }
+
+            .profile {
+                display: none;
+            }
+
+            .projects {
+                padding-left: 5rem;
+            }
+
+            .sidebar {
+                display: block;
+                align-self: start;
+                padding-right: 5rem;
+                border-right: 1px solid #d8dfe6;
+                position: sticky;
+                top: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -120,6 +146,13 @@
                     <li>English (native)</li>
                     <li>French (basic)</li>
                     <li>Canadian Citizen</li>
+                </ul>
+                <ul class="skills">
+                    <h3>
+                        Education
+                    </h3>
+                    <li>Seneca College</li>
+                    <li>Civil Engineering Technology</li>
                 </ul>
                 <ul class="skills">
                     <h3>
@@ -145,6 +178,17 @@
                     </li>
                 </ul>
             </section>
+        </div>
+        <div class="profile">
+            <h2>Ricky Widjaja</h2>
+            <p>Toronto, ON</p>
+            <p>rickyw08@gmail.com</p>
+
+            <h3>Education</h3>
+            <p>Seneca College</p>
+            <p>Civil Engineering Technology</p>
+            <h3>Skills</h3>
+            <p>AutoCAD, Surveying, GIS, HTML/CSS, JavaScript, Python, SQL, Excel, Linux, Windows</p>
         </div>
         <div class="projects">
             <div class="project">
@@ -197,48 +241,19 @@
                     <img src="./cad_assignment2a.png" alt="">
                 </div>
 
-                <div class="project">
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Bus Schedule Web App (Placeholder)</h3>
+                    <ul class="project-details">
+                        <strong>
+                            <li>Course: </li>
+                        </strong>
+                        <li><a href="https://www.tdotgo.com/">Visit website</a> </li>
+                    </ul>
                     <div>
-                        <h3>Bus Schedule Web App (Placeholder)</h3>
-                        <ul class="project-details">
-                            <strong>
-                                <li>Course: </li>
-                            </strong>
-                            <li><a href="https://www.tdotgo.com/">Visit website</a> </li>
-                        </ul>
-                        <div>
-                            <p>(Description of project) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                                quam
-                                nisi
-                                voluptates asperiores
-                                optio
-                                aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
-                                consectetur
-                                ut,
-                                nemo quis. Nesciunt, voluptate.</p>
-                            <p>(Learning outcome) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam nisi
-                                voluptates asperiores
-                                optio
-                                aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
-                                consectetur
-                                ut,
-                                nemo quis. Nesciunt, voluptate.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./tdotgo_1.png" alt="">
-                    </div>
-                </div>
-                <div class="project">
-                    <div>
-                        <h3>React Web Applicaiton (Placeholder)</h3>
-                        <ul class="project-details">
-                            <strong>
-                                <li>Course: </li>
-                            </strong>
-                            <li><a href="https://rickywid.github.io/keyboard-warrior/">Visit website</a> </li>
-                        </ul>
-                        <p>(Description of project) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam
+                        <p>(Description of project) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                            quam
                             nisi
                             voluptates asperiores
                             optio
@@ -254,61 +269,87 @@
                             ut,
                             nemo quis. Nesciunt, voluptate.</p>
                     </div>
-                    <div>
-                        <img src="./kw.png" alt="">
-                    </div>
                 </div>
-                <div class="project">
-                    <div>
-                        <h3>Tableau Dashboard (Placeholder)</h3>
-                        <ul class="project-details">
-                            <strong>
-                                <li>Course: </li>
-                            </strong>
-                            <li>Completed: </li>
-                        </ul>
-                        <p>(Description of project) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam
-                            nisi
-                            voluptates asperiores
-                            optio
-                            aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
-                            consectetur
-                            ut,
-                            nemo quis. Nesciunt, voluptate.</p>
-                        <p>(Learning outcome) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam nisi
-                            voluptates asperiores
-                            optio
-                            aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
-                            consectetur
-                            ut,
-                            nemo quis. Nesciunt, voluptate.</p>
-                    </div>
-                    <div class='tableauPlaceholder' id='viz1727978122877' style='position: relative'><noscript><a
-                                href='#'><img alt='Dashboard 1 '
-                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bike-Thefts&#47;Dashboard1&#47;1_rss.png'
-                                    style='border: none' /></a></noscript><object class='tableauViz'
-                            style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                            <param name='embed_code_version' value='3' />
-                            <param name='site_root' value='' />
-                            <param name='name' value='Bike-Thefts&#47;Dashboard1' />
-                            <param name='tabs' value='no' />
-                            <param name='toolbar' value='yes' />
-                            <param name='static_image'
-                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bike-Thefts&#47;Dashboard1&#47;1.png' />
-                            <param name='animate_transition' value='yes' />
-                            <param name='display_static_image' value='yes' />
-                            <param name='display_spinner' value='yes' />
-                            <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' />
-                            <param name='language' value='en-US' />
-                        </object>
-                    </div>
+                <div>
+                    <img src="./tdotgo_1.png" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>React Web Applicaiton (Placeholder)</h3>
+                    <ul class="project-details">
+                        <strong>
+                            <li>Course: </li>
+                        </strong>
+                        <li><a href="https://rickywid.github.io/keyboard-warrior/">Visit website</a> </li>
+                    </ul>
+                    <p>(Description of project) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam
+                        nisi
+                        voluptates asperiores
+                        optio
+                        aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
+                        consectetur
+                        ut,
+                        nemo quis. Nesciunt, voluptate.</p>
+                    <p>(Learning outcome) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam nisi
+                        voluptates asperiores
+                        optio
+                        aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
+                        consectetur
+                        ut,
+                        nemo quis. Nesciunt, voluptate.</p>
+                </div>
+                <div>
+                    <img src="./kw.png" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h3>Tableau Dashboard (Placeholder)</h3>
+                    <ul class="project-details">
+                        <strong>
+                            <li>Course: </li>
+                        </strong>
+                        <li>Completed: </li>
+                    </ul>
+                    <p>(Description of project) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam
+                        nisi
+                        voluptates asperiores
+                        optio
+                        aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
+                        consectetur
+                        ut,
+                        nemo quis. Nesciunt, voluptate.</p>
+                    <p>(Learning outcome) Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam nisi
+                        voluptates asperiores
+                        optio
+                        aliquid harum quos! Reiciendis exercitationem suscipit ea laboriosam tenetur natus
+                        consectetur
+                        ut,
+                        nemo quis. Nesciunt, voluptate.</p>
+                </div>
+                <div class='tableauPlaceholder' id='viz1727978122877' style='position: relative'><noscript><a
+                            href='#'><img alt='Dashboard 1 '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bike-Thefts&#47;Dashboard1&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Bike-Thefts&#47;Dashboard1' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bike-Thefts&#47;Dashboard1&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                    </object>
                 </div>
             </div>
     </main>
-    <hr>
-
     <script type='text/javascript'>                    var divElement = document.getElementById('viz1727978463104'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
     <script type='text/javascript'>                    var divElement = document.getElementById('viz1727978122877'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '1177px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                
